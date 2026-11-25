@@ -1,0 +1,47 @@
+/*Responsividade*/
+
+@media (max-width:768px){
+  .botao-menu{
+    display:block
+  }
+  .menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--cor-superficie);
+    border-bottom:1px solid var(--cor-borda);
+    padding:1rem 4%
+  }
+
+  .menu.aberto{
+    display:block
+  }
+  .menu ul{
+    flex-direction:column;
+    align-items:flex-start
+  }
+
+  .hero .container{
+    grid-template-columns:1fr;
+    text-align:center
+  }
+  .hero p.subtitulo{
+    margin-inline:auto
+  }
+  .hero .redes{
+    justify-content:center
+  }
+  .foto-perfil{
+    order:-1;
+    max-width:200px
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{
+    animation:none!important;
+    transition:none!important
+  }
+}

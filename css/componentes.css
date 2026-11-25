@@ -1,0 +1,147 @@
+/* Botões, cartões, tabela e barras */
+
+.botao{
+  display:inline-block;
+  background:var(--cor-destaque);
+  color:#fff;
+  font:600 1rem var(--fonte-titulo);
+  padding:.7rem 1.4rem;
+  border:0;
+  border-radius:var(--raio);
+  text-decoration:none;
+  cursor:pointer;
+  transition:transform .2s,filter .2s
+}
+
+body.tema-escuro .botao{
+  color:#0f1724
+}
+
+.botao:hover{
+  transform:translateY(-3px);
+  filter:brightness(1.1)
+}
+
+.redes{
+  display:flex;
+  gap:1rem;
+  list-style:none;
+  flex-wrap:wrap
+}
+
+.redes a{
+  font-family:var(--fonte-titulo);
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid var(--cor-borda);
+  padding:.4rem 1rem;
+  border-radius:999px;
+  background:var(--cor-superficie);
+  transition:background .2s,color .2s
+}
+
+.redes a:hover{
+  background:var(--cor-destaque);
+  color:#fff
+}
+
+.cartao{
+  background:var(--cor-superficie);
+  border:1px solid var(--cor-borda);
+  border-radius:var(--raio);
+  padding:1.4rem;
+  transition:transform .25s,border-color .25s
+}
+
+.cartao:hover{
+  transform:translateY(-4px);
+  border-color:var(--cor-destaque)
+}
+
+.cartao p{
+  color:var(--cor-suave);
+  font-size:1rem;
+  margin:.5rem 0
+}
+
+.etiqueta{
+  display:inline-block;
+  font:.85rem var(--fonte-titulo);
+  background:var(--cor-fundo);
+  border:1px solid var(--cor-borda);
+  border-radius:999px;
+  padding:0 .7rem;
+  margin:.2rem .2rem 0 0
+}
+
+.filtros{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-bottom:1.5rem
+}
+
+.filtros button{
+  font:inherit;
+  font-size:.95rem;
+  background:var(--cor-superficie);
+  color:var(--cor-texto);
+  border:1px solid var(--cor-borda);
+  border-radius:999px;
+  padding:.3rem 1rem;
+  cursor:pointer
+}
+
+.filtros button.ativo{
+  background:var(--cor-destaque);
+  color:#fff;
+  border-color:var(--cor-destaque)
+}
+
+.escondido{
+  display:none
+}
+
+.tabela-rolavel{
+  overflow-x:auto
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--cor-superficie)
+}
+
+th,td{
+  text-align:left;
+  padding:.7rem 1rem;
+  border-bottom:1px solid var(--cor-borda)
+}
+
+th{
+  font-family:var(--fonte-titulo)
+}
+
+tbody tr:hover{
+  background:var(--cor-fundo)
+}
+
+.barra{
+  height:8px;
+  background:var(--cor-borda);
+  border-radius:99px;
+  overflow:hidden;
+  margin:.3rem 0 1rem
+}
+
+.barra span{
+  display:block;
+  height:100%;
+  width:0;
+  background:var(--cor-destaque);
+  transition:width 1.2s ease
+}
+
+.cartao .redes{
+  margin-top:1rem
+}

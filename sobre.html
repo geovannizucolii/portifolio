@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Geovanni Carlos, estudante de Engenharia de Software.">
+  <title>Sobre | Geovanni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html">Geovanni Carlos DEV</a>
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" class="ativo" aria-current="page">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><button class="botao-tema" id="botao-tema" type="button">Tema escuro</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <h1>Sobre mim</h1>
+        <p style="margin-top:1rem;max-width:65ch">
+          Estou no primeiro ano de Engenharia de Software e quero seguir em Machine Learning.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Formação</h2>
+        <div class="tabela-rolavel">
+          <table>
+            <caption class="escondido">Formação acadêmica</caption>
+            <thead><tr><th scope="col">Curso</th><th scope="col">Instituição</th><th scope="col">Período</th></tr></thead>
+            <tbody>
+              <tr><td>Engenharia de Software</td><td>UNIFIL</td><td>2026 – 2030</td></tr>
+              <tr><td>Machine Learning e Data Science com Python de A a Z</td><td>Udemy</td><td>Out/2026 - Presente</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div id="habilidades">
+          <p>HTML e CSS</p><div class="barra"><span data-nivel="60"></span></div>
+          <p>JavaScript</p><div class="barra"><span data-nivel="20"></span></div>
+          <p>Python</p><div class="barra"><span data-nivel="85"></span></div>
+          <p>Java</p><div class="barra"><span data-nivel="50"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <ul class="redes">
+        <li>
+          <a href="https://www.linkedin.com/in/geovanni-zucolli-b94245346" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/geovannizucolii" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="#" id="copiar-email">Copiar e-mail</a>
+        </li>
+      </ul>
+      <p>&copy; <span id="ano">2026</span> Geovanni Carlos</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

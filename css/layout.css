@@ -1,0 +1,126 @@
+/* Cabeçalho, menu, hero, grade e rodapé */
+
+.cabecalho{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:var(--cor-superficie);
+  border-bottom:1px solid var(--cor-borda)
+}
+
+.cabecalho .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:.8rem 0
+}
+
+.logo{
+  font:700 1.3rem var(--fonte-titulo);
+  text-decoration:none;
+  color:var(--cor-texto)
+}
+
+.menu ul{
+  display:flex;gap:1.5rem;
+  list-style:none;
+  align-items:center
+}
+
+.menu a{
+  font-family:var(--fonte-titulo);
+  text-decoration:none;
+  color:var(--cor-suave);
+  padding-bottom:.2rem;
+  border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s
+}
+
+.menu a:hover,.menu a.ativo{
+  color:var(--cor-texto);
+  border-color:var(--cor-destaque)
+}
+
+.botao-menu{
+  display:none;
+  background:none;
+  border:1px solid var(--cor-borda);
+  color:var(--cor-texto);
+  font-size:1.4rem;
+  border-radius:var(--raio);
+  padding:.2rem .7rem;
+  cursor:pointer
+}
+
+.botao-tema{
+  background:none;
+  border:1px solid var(--cor-borda);
+  color:var(--cor-texto);
+  border-radius:999px;
+  padding:.2rem .8rem;
+  cursor:pointer;
+  font:inherit;
+  font-size:.95rem
+}
+
+.hero .container{
+  display:grid;
+  grid-template-columns:1.6fr 1fr;
+  gap:3rem;
+  align-items:center
+}
+
+.hero p.subtitulo{
+  font-size:1.3rem;
+  color:var(--cor-suave);
+  margin:1rem 0 1.5rem;
+  max-width:34ch
+}
+
+.cursor::after{
+  content:"_";
+  color:var(--cor-destaque);
+  animation:piscar 1s steps(1) infinite
+}
+
+@keyframes piscar{
+  50%{opacity:0}
+}
+
+.foto-perfil{
+  width:100%;
+  max-width:280px;
+  aspect-ratio:1;
+  border-radius:50%;
+  border:6px solid var(--cor-destaque);
+  object-fit:cover;
+  justify-self:center;
+  animation:entrada 1s ease both
+}
+
+@keyframes entrada{
+  from{
+    opacity:0;
+    transform:scale(.85)}to{opacity:1;transform:none}
+}
+
+.grade{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem
+}
+
+.rodape{
+  background:var(--cor-superficie);
+  border-top:1px solid var(--cor-borda);
+  padding:2rem 0;
+  margin-top:2rem;
+  text-align:center;
+  color:var(--cor-suave);
+  font-size:.95rem
+}
+
+.rodape .redes{
+  justify-content:center;
+  margin-bottom:1rem
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Geovanni Carlos, estudante de Engenharia de Software.">
+  <title>Início | Geovanni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html">Geovanni Carlos DEV</a>
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="ativo" aria-current="page">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><button class="botao-tema" id="botao-tema" type="button">Tema escuro</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1>Olá, eu sou <br>Geovanni Carlos</h1>
+          <p class="subtitulo cursor">Estudante de Engenharia de Software</p>
+          <ul class="redes">
+            <li><a href="https://www.linkedin.com/in/geovanni-zucolli-b94245346" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/geovannizucolii" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" id="copiar-email">Copiar e-mail</a></li>
+          </ul>
+        </div>
+        <img class="foto-perfil" src="img/1792072974838.png" alt="Foto de perfil de Geovanni Carlos" width="280" height="280">
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>O que eu faço</h2>
+        <div class="grade">
+          <article class="cartao"><h3>Dados</h3><p>Análise e visualização de dados com Python.</p></article>
+          <article class="cartao"><h3>Java</h3><p>Sistemas orientados a objetos</p></article>
+          <article class="cartao"><h3>Web</h3><p>Sites responsivos com HTML, CSS e JavaScript.</p></article>
+        </div>
+        <p style="margin-top:2rem"><a class="botao" href="projetos.html">Ver projetos</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="container">
+      <ul class="redes">
+        <li>
+          <a href="https://www.linkedin.com/in/geovanni-zucolli-b94245346" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/geovannizucolii" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="#" id="copiar-email">Copiar e-mail</a>
+        </li>
+      </ul>
+      <p>&copy; <span id="ano">2026</span> Geovanni Carlos</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
